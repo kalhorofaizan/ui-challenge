@@ -1,0 +1,63 @@
+.root{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E0E8FE;
+  div{
+    border-radius: 15px;
+    div{
+      text-align: center;
+      font-weight: bold;
+      margin-top: 5px;
+      font-family: 'Red Hat Display';
+      div.price{
+        width: 90%;
+        margin: 15px auto;
+        border-radius: 10px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: hsl(224, 65%, 97%);
+        flex-direction: row;
+        padding: 10px;
+        div{
+          height: 50px;
+          width: 50px;
+        }
+        div:nth-child(2){
+          flex-grow: 4;
+          text-align: left;
+          margin-left: 20px;
+        }
+        div+p{
+          margin-right: 10px;
+          text-decoration: underline;
+          color: hsl(245, 75%, 52%);
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+      button{
+        width: 95%;
+        height: 45px;
+        font-weight: bold;
+        border-radius: 10px;
+        background-color: #3829e0;
+        
+      }
+      button:hover{
+        background-color: #2f22b9;
+      }
+      button+p{
+        font-size: 16px;
+        font-family: 'Red Hat Display';
+        margin: 10px;
+        color: #858585;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+}
