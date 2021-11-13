@@ -7,11 +7,13 @@ import CardMedia from '@mui/material/CardMedia';
 import music from './images/icon-music.svg';
 import Typography from '@mui/material/Typography';
 import illustration from './images/illustration-hero.svg';
+import backgroundImage from './images/pattern-background-desktop.svg'
 import { Button } from '@mui/material';
 const Home = () => {
   return (
-    <div className='root' >
-      <Card sx={{ maxWidth: 345 }}  >
+    <div className='root' style={{
+      backgroundImage: `url(${backgroundImage})`}} >
+      <Card sx={{ maxWidth: 345 }}  elevation={4}  >
       <CardMedia
         component="img"
         height="160"
@@ -38,7 +40,7 @@ const Home = () => {
           </div>
           <Typography >Change</Typography>
         </div>
-        <Button variant="contained">Proceed to Payment</Button>
+        <Button  variant="contained">Proceed to Payment</Button>
         <Typography >Cancel Order</Typography>
       </CardContent>
     </Card>
